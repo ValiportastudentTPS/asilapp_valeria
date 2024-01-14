@@ -144,6 +144,22 @@
             android:textColor="@color/black" />
 
 
+        <Spinner
+            android:id="@+id/spinner_centri"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="start|left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="20sp"
+            android:entries="@array/centers_options"
+            android:outlineAmbientShadowColor="#076AEC"
+            android:prompt="@string/centri_prompt"
+            app:boxStrokeColor="#076AEC" />
+
+
 
 
         <Button

@@ -20,4 +20,9 @@
     </array>
 
 
+    <array name="centers_options">
+      <item>Casa delle Culture</item>
+        <item>Centro Accoglienza Richiedenti Asilo</item>
+        <item>Il Sogno di Don Bosco</item>
+</array>
 </resources>

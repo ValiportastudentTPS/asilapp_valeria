@@ -3,4 +3,5 @@
     <string name="lingua_prompt">Lingua</string>
     <string name="tipoUtente_prompt">Vista</string>
     <string name="genere_prompt">Genere</string>
+    <string name="centri_prompt" />
 </resources>

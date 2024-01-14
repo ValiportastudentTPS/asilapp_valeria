@@ -44,6 +44,11 @@ public class RegistrazioneRichiedente extends AppCompatActivity {
         Spinner genere;
         genere=findViewById(R.id.spinner_genere);
 
+
+        Spinner centers;
+        centers=findViewById(R.id.spinner_centri);
+
+
         confirm_reg=findViewById(R.id.confirm_registration1);
 
 
@@ -52,6 +57,7 @@ public class RegistrazioneRichiedente extends AppCompatActivity {
             public void onClick(View v) {
                 String seleziona_genere=genere.getSelectedItem().toString();
                 String birthDate = date_birth.getText().toString().trim();
+                String seleziona_centro=centers.getSelectedItem().toString();
 
                 Map<String, Object> RichiedenteAsilo = new HashMap<>();
                 if(!name.getText().toString().isEmpty() &&
@@ -61,7 +67,9 @@ public class RegistrazioneRichiedente extends AppCompatActivity {
                         !place_birth.getText().toString().isEmpty() &&
                         !date_birth.getText().toString().trim().isEmpty()&&
                         !seleziona_genere.isEmpty() &&
-                        !email.getText().toString().isEmpty()
+                        !email.getText().toString().isEmpty() &&
+                        !seleziona_centro.isEmpty()
+
                 ) {
 
                     RichiedenteAsilo.put("Nome",name.getText().toString());
@@ -72,6 +80,7 @@ public class RegistrazioneRichiedente extends AppCompatActivity {
                     RichiedenteAsilo.put("Genere",seleziona_genere);
                     RichiedenteAsilo.put("Password",password.getText().toString());
                     RichiedenteAsilo.put("Email",email.getText().toString());
+                    RichiedenteAsilo.put("Centro",seleziona_centro);
 
                     db.collection("RICHIEDENTI_ASILO").document("0002").set(RichiedenteAsilo);
                     Toast.makeText(RegistrazioneRichiedente.this, "Registrazione successo", Toast.LENGTH_SHORT).show();
