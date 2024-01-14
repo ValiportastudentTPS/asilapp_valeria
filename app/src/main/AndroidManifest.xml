@@ -13,6 +13,24 @@
         android:theme="@style/Theme.AsilApp"
         tools:targetApi="31">
         <activity
+            android:name=".ListaRichiedenti"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrazioneStaff"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrazioneRichiedente"
+            android:exported="false" />
+        <activity
+            android:name=".AccessoStaff"
+            android:exported="false" />
+        <activity
+            android:name=".AccessoRichiedente"
+            android:exported="false" />
+        <activity
+            android:name=".IntroUsoAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -9,53 +9,55 @@
     android:background="#fcd962">
 
     <Spinner
-        android:id="@+id/spinner_lingua"
+        android:id="@+id/spinner_vista_Utente"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="start"
         android:layout_marginStart="20sp"
         android:layout_marginLeft="20sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20sp"
         android:layout_marginRight="20sp"
         android:layout_marginBottom="20sp"
-        android:entries="@array/opzione_lingua"
-        android:prompt="@string/lingua_prompt"
+        android:entries="@array/vista_utente"
+        android:prompt="@string/tipoUtente_prompt"
         app:boxStrokeColor="#076AEC"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense" />
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:spinnerMode="dropdown"
+        />
 
     <ImageView
         android:id="@+id/icona"
         android:layout_width="306dp"
         android:layout_height="291dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/icona_app">
 
     </ImageView>
 
+
     <TextView
-        android:id="@+id/benvenutoText"
+        android:id="@+id/introUsoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Benvenuto!"
+        android:text="Qui per fornirti"
         android:textAlignment="center"
         android:textColor="#14144A"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/introUso2Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCOGLIENZA"
+        android:textAlignment="center"
+        android:textColor="#14144A"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"/>
 
 
-    <Button
-        android:id="@+id/nextStep_btn"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/benvenutoText"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#076AEC"
-        android:text="INIZIA"
-        android:textSize="20sp"
-        app:cornerRadius="20dp" />
 
 
 </LinearLayout>

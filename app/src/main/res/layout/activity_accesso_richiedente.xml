@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="AsilApp"
+        android:background="#fcd962"
+        app:titleTextColor="#076AEC"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        />
+
+
+
+    <TextView
+        android:id="@+id/loginRICHIEDENTE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Accesso"
+        android:textAlignment="center"
+        android:textColor="#14144A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="521dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/mail_icon"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/key_icon"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#076AEC"
+            android:layout_gravity="center"
+            android:text="ACCEDI"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+
+
+        <TextView
+            android:id="@+id/password_persa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_persa"
+            android:layout_marginBottom="30dp"
+            android:onClick="Recupero_password"
+            android:padding="8dp"
+            android:text="Non ricordi la password?"
+            android:textAlignment="textEnd"
+            android:textColor="#14144A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/request_signup"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupText"
+            android:layout_marginTop="60dp"
+            android:onClick="register"
+            android:padding="5dp"
+            android:text="Non sei registrato?"
+            android:textAlignment="center"
+            android:textColor="#14144A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enter_signup"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupText"
+            android:onClick="register"
+            android:padding="5dp"
+            android:text="Iscriviti Ora"
+            android:textAlignment="center"
+            android:textColor="#14144A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

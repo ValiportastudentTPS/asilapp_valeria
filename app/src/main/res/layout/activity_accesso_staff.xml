@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="AsilApp"
+        android:background="#fcd962"
+        app:titleTextColor="#076AEC"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Accesso"
+        android:textAlignment="center"
+        android:textColor="#14144A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="461dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/mail_icon"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/key_icon"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnConfirmStaff"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#076AEC"
+            android:text="ACCEDI"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <!--    <TextView
+                android:id="@+id/password_persa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_persa"
+                android:layout_marginBottom="30dp"
+                android:onClick="Recupero_password"
+                android:padding="10dp"
+                android:text="Non ricordi la password?"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />  -->
+
+        <TextView
+            android:id="@+id/newAccount_text"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupText"
+            android:layout_marginTop="50dp"
+            android:onClick="register"
+            android:padding="10dp"
+            android:text="Per un nuovo account"
+            android:textAlignment="center"
+            android:textColor="#14144A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/addUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_user_icon"
+            android:backgroundTint="#14144A" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
